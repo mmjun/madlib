@@ -8,15 +8,10 @@ var random2 = Math.floor((Math.random() * startupY.length));
 document.getElementById('create').onclick = createStartup;
 
 function createStartup () {
+  event.preventDefault();
   document.getElementById('xForY').innerHTML = 'A startup that is ' + startupX[random1] + ', but for ' + startupY[random2];
 }
 
-document.getElementById('save').onclick = saveStartup;
-
-function saveStartup () {
-
-}
 
 
-
-console.log('A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]);
+//console.log('A startup that is ' + startupX[random1] + ', but for ' + startupY[random2]);
